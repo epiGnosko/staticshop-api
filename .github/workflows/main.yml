@@ -1,0 +1,10 @@
+name: My Assignment Action
+
+on: [push] # This tells the robot to wake up whenever you push code
+
+jobs:
+  test:
+    runs-on: ubuntu-latest # This is the type of computer the robot uses
+    steps:
+      - name: 23f2001594@ds.study.iitm.ac.in
+        run: echo "Action triggered successfully!"
