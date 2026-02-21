@@ -27,10 +27,27 @@
     { "id": "prod-3d927bf7-021", "name": "Elite Item 21", "category": "home", "price": 373.08, "stock": 97, "rating": 2.8 },
     { "id": "prod-3d927bf7-022", "name": "Pro Item 22", "category": "home", "price": 163.23, "stock": 101, "rating": 2.0 }
   ],
-  "aggregations": {
-    "home": {
-      "count": 7,
-      "inventoryValue": 186075.30
+    "aggregations": {
+      "home": {
+        "count": 7,
+        "inventoryValue": 186075.30
+      },
+      "electronics": {
+        "count": 6,
+        "inventoryValue": 105825.99
+      },
+      "clothing": {
+        "count": 3,
+        "inventoryValue": 69532.65
+      },
+      "sports": {
+        "count": 4,
+        "inventoryValue": 139316.03
+      },
+      "books": {
+        "count": 2,
+        "inventoryValue": 44524.14
+      }
     }
   }
 }
