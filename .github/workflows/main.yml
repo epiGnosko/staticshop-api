@@ -1,10 +1,22 @@
-name: My Assignment Action
+name: Dependency Caching Task
 
-on: [push] # This tells the robot to wake up whenever you push code
+on: [push]
 
 jobs:
-  test:
-    runs-on: ubuntu-latest # This is the type of computer the robot uses
+  cache-job:
+    runs-on: ubuntu-latest
     steps:
-      - name: 23f2001594@ds.study.iitm.ac.in
-        run: echo "Action triggered successfully!"
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Cache dependencies
+        id: my-cache-step
+        uses: actions/cache@v4
+        with:
+          # This is where your 'dependencies' would normally live
+          path: ~/.npm
+          # This is the specific key required by your assignment
+          key: cache-77186c6
+
+      - name: prime-cache-77186c6
+        run: echo "Cache hit status is ${{ steps.my-cache-step.outputs.cache-hit }}"
