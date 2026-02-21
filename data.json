@@ -184,7 +184,7 @@
   "aggregations": {
     "electronics": {
       "count": 6,
-      "inventoryValue": 145152.41
+      "inventoryValue": 147151.01
     },
     "home": {
       "count": 7,
